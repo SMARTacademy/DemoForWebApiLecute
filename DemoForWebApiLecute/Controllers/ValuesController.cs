@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoForWebApiLecute.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -7,7 +8,6 @@ using System.Web.Http;
 
 namespace DemoForWebApiLecute.Controllers
 {
-    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
@@ -36,5 +36,33 @@ namespace DemoForWebApiLecute.Controllers
         public void Delete(int id)
         {
         }
+
+        //public IEnumerable<Product> GetAllProduts() {
+        //    return new List<Product>() {
+        //        new Product{
+        //            Id = 1,
+        //            Name = "Prod 1",
+        //            Description = "Prod 1 description"
+        //        },
+        //        new Product{
+        //            Id = 2,
+        //            Name = "Prod 2",
+        //            Description = "Prod 2 description" },
+        //        new Product{
+        //            Id = 3,
+        //            Name = "Prod 3",
+        //            Description = "Prod 3 description" },
+        //    };
+        //}
+
+        //public object GetTest()
+        //{
+        //    return new
+        //    {
+        //        Name = "Alice",
+        //        Age = 23,
+        //        Pets = new List<string> { "Fido", "Polly", "Spot" }
+        //    };
+        //}
     }
 }
