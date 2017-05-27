@@ -37,8 +37,7 @@ namespace DemoForWebApiLecute.Controllers
         {
         }
 
-        //public IEnumerable<Product> GetAllProduts()
-        //{
+        //public IEnumerable<Product> GetAllProduts() {
         //    return new List<Product>() {
         //        new Product{
         //            Id = 1,

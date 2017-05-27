@@ -23,7 +23,7 @@ namespace DemoForWebApiLecute.Controllers
         }
 
         // POST api/values
-        public void Post(string productId, double megapixel)
+        public void Post([FromBody]string value)
         {
         }
 
@@ -37,8 +37,7 @@ namespace DemoForWebApiLecute.Controllers
         {
         }
 
-        //public IEnumerable<Product> GetAllProduts()
-        //{
+        //public IEnumerable<Product> GetAllProduts() {
         //    return new List<Product>() {
         //        new Product{
         //            Id = 1,

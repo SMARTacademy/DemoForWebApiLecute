@@ -11,10 +11,10 @@ namespace DemoForWebApiLecute.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
         // GET api/values/5
         public string Get(int id)
@@ -37,24 +37,24 @@ namespace DemoForWebApiLecute.Controllers
         {
         }
 
-        //public IEnumerable<Product> GetAllProduts()
-        //{
-        //    return new List<Product>() {
-        //        new Product{
-        //            Id = 1,
-        //            Name = "Prod 1",
-        //            Description = "Prod 1 description"
-        //        },
-        //        new Product{
-        //            Id = 2,
-        //            Name = "Prod 2",
-        //            Description = "Prod 2 description" },
-        //        new Product{
-        //            Id = 3,
-        //            Name = "Prod 3",
-        //            Description = "Prod 3 description" },
-        //    };
-        //}
+        public IEnumerable<Product> GetAllProduts()
+        {
+            return new List<Product>() {
+                new Product{
+                    Id = 1,
+                    Name = "Prod 1",
+                    Description = "Prod 1 description"
+                },
+                new Product{
+                    Id = 2,
+                    Name = "Prod 2",
+                    Description = "Prod 2 description" },
+                new Product{
+                    Id = 3,
+                    Name = "Prod 3",
+                    Description = "Prod 3 description" },
+            };
+        }
 
         //public object GetTest()
         //{
